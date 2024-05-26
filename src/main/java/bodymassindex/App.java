@@ -3,6 +3,7 @@ package bodymassindex;
 
 import java.util.Scanner;
 
+
 public class App {
 
     
@@ -10,17 +11,43 @@ public class App {
         
         Scanner input = new Scanner(System.in);
         
+        float height = 0.0f;
+        float weight = 0.0f;
+                
         System.out.print("Ingresa tu altura (metros): ");
-        float height = input.nextFloat();
+    
+        
+        while (!input.hasNextFloat()) {
+           
+            System.out.println("Los datos ingresado no son validos.");
+            System.out.print("Ingresa tu altura (metros): ");
+            input.next();
+            
+        }
 
-        System.out.print("Ingresa tu peso (Kg): ");
-        float weight = input.nextFloat();
+        
+        height = input.nextFloat();
 
+        System.out.print("Ingresa tu peso (KG): ");
+
+
+        while (!input.hasNextFloat()) {
+
+            System.out.println("Los datos ingresado no son validos.");
+            System.out.print("Ingresa tu peso (KG): ");
+            input.next();
+            
+        }
+
+        weight = input.nextFloat();
+
+              
         float heightSquared = (float) Math.pow(height, 2);
         float mass = weight/heightSquared;
 
         String result = "mass";
-       
+
+
                 
         if (mass < 16) {
             result = "Tienes delgadez extrema.";
@@ -50,7 +77,10 @@ public class App {
 
         System.out.println("Tu altura es: "+height+" metros, tu peso es: "+weight+" Kg y tu IMC es "+mass+". "+result);
 
-        
+
+
+
+
         input.close();
     }
 }
