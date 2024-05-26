@@ -39,11 +39,10 @@ public class App {
             
         }
 
+        
         weight = input.nextFloat();
 
-              
-        float heightSquared = (float) Math.pow(height, 2);
-        float mass = weight/heightSquared;
+        float mass = weight/(height*height);
 
         String result = "mass";
 
