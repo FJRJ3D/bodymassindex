@@ -28,7 +28,7 @@ public class App {
             System.out.println("Los datos ingresado no son validos.");
             System.out.print("Ingresa tu altura (metros): ");
             input.next();
-            
+            input.nextLine();
         }
 
         
@@ -42,7 +42,7 @@ public class App {
             System.out.println("Los datos ingresado no son validos.");
             System.out.print("Ingresa tu peso (KG): ");
             input.next();
-            
+            input.nextLine();
         }
 
         
