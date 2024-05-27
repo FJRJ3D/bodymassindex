@@ -32,7 +32,7 @@ public class App {
         }
 
         
-        height = input.nextFloat();
+        height = input.nextFloat(); input.nextLine();
 
         System.out.print("Ingresa tu peso (KG): ");
 
@@ -46,7 +46,7 @@ public class App {
         }
 
         
-        weight = input.nextFloat();
+        weight = input.nextFloat(); input.nextLine();
 
         float mass = weight/(height*height);
 
