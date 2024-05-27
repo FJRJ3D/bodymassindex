@@ -27,12 +27,12 @@ public class App {
            
             System.out.println("Los datos ingresado no son validos.");
             System.out.print("Ingresa tu altura (metros): ");
-            input.next();
             input.nextLine();
         }
 
         
-        height = input.nextFloat(); input.nextLine();
+        height = input.nextFloat();
+        input.nextLine();
 
         System.out.print("Ingresa tu peso (KG): ");
 
@@ -41,12 +41,12 @@ public class App {
 
             System.out.println("Los datos ingresado no son validos.");
             System.out.print("Ingresa tu peso (KG): ");
-            input.next();
             input.nextLine();
         }
 
         
-        weight = input.nextFloat(); input.nextLine();
+        weight = input.nextFloat();
+        input.nextLine();
 
         float mass = weight/(height*height);
 
