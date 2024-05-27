@@ -8,7 +8,13 @@ public class App {
 
     
     public static void main(String args[]) {
-        
+
+
+        System.out.println("=============================================================================================");
+        System.out.println("BIENVENID@ A LA CALCULADORA IMC");
+        System.out.println("=============================================================================================");
+
+
         Scanner input = new Scanner(System.in);
         
         float height = 0.0f;
@@ -73,9 +79,9 @@ public class App {
             result = "Tienes obesidad mórbida.";
         }
          
-
+        System.out.println("=============================================================================================");
         System.out.println("Tu altura es: "+height+" metros, tu peso es: "+weight+" Kg y tu IMC es "+mass+". "+result);
-
+        System.out.println("=============================================================================================");
 
 
 
